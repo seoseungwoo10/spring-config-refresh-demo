@@ -1,0 +1,6 @@
+app:
+  feature:
+    x:
+      enabled: true
+      name: "Initial Feature Name"
+  message: "Hello from custom-config.yml"

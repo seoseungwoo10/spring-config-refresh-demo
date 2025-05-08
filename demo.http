@@ -1,0 +1,24 @@
+### GET request to example server
+GET http://localhost:8080/some-generic-endpoint
+
+### Refresh get custom-config properties
+# Requires admin.security.api-key from application.yml
+POST http://localhost:8080/admin/refresh/properties
+X-API-KEY: 1234567890-ABC
+
+### Refresh update custom-config properties
+# Requires admin.security.api-key from application.yml
+POST http://localhost:8080/admin/refresh/custom-config
+X-API-KEY: 1234567890-ABC
+
+app:
+  feature:
+    x:
+      enabled: false
+      name: "Initial Feature Name 3" # Added for FeatureXConfig
+  message: "Hello from custom-config.yml"
+
+### test endpoint
+GET http://localhost:8080/test/config
+
+

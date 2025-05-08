@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring-config-refresh-demo
+  config:
+    import: optional:classpath:custom-config.yml
+
+# Initial logging configuration
+logging:
+  level:
+    root: INFO
+    com.example.demo: DEBUG
+
+# Admin Security
+admin:
+  security:
+    api-key: "1234567890-ABC" # Replace with a strong, unique API key
